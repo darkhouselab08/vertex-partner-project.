@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertex Partner - Mapa Mental del Proyecto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0D1117;
+            background-image: 
+                radial-gradient(circle at 25px 25px, rgba(0, 170, 255, 0.1) 2%, transparent 0%), 
+                radial-gradient(circle at 75px 75px, rgba(0, 170, 255, 0.05) 2%, transparent 0%);
+            background-size: 100px 100px;
+            color: #E6EDF3;
+        }
+
+        .glass-card {
+            background: rgba(22, 27, 34, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(56, 139, 253, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(56, 139, 253, 0.5);
+            box-shadow: 0 0 25px rgba(56, 139, 253, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            filter: drop-shadow(0 0 8px rgba(56, 139, 253, 0.5));
+        }
+
+        .highlight {
+            color: #388BFD;
+        }
+
+        .status-dot {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-2">
+                <span class="highlight">Vertex Partner</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400">Mapa Mental del Proyecto</p>
+        </header>
+
+        <!-- Main Grid -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1: IDENTIDAD Y CEREBRO DIGITAL -->
+            <div class="glass-card rounded-xl p-6 lg:col-span-3">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <svg class="w-8 h-8 text-blue-400 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-100 mb-2">1. IDENTIDAD Y CEREBRO DIGITAL (El "ADN")</h2>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><strong class="font-semibold text-gray-200">Super Prompt v3.1:</strong> Nuestra constitución y manual de operaciones.</li>
+                            <li><strong class="font-semibold text-gray-200">Marco de Proc. Lógico (MPL):</strong> Sistema interno sobre *cómo pensar*.</li>
+                            <li><strong class="font-semibold text-gray-200">Principios de Arquitectura:</strong> Plan para crecer de forma modular y escalable.</li>
+                            <li><strong class="font-semibold text-gray-200">Protocolo de Horizonte:</strong> Sistema para analizar y asimilar nuevas tecnologías.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: OFERTA DE SERVICIOS -->
+            <div class="glass-card rounded-xl p-6">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                       <svg class="w-8 h-8 text-blue-400 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-100 mb-2">2. OFERTA DE SERVICIOS</h2>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><strong class="font-semibold text-gray-200">Nivel 1: Agente "Starter"</strong><br><span class="text-sm text-gray-400">Función: FAQ + Captura de Leads.</span></li>
+                            <li><strong class="font-semibold text-gray-200">Nivel 2: Agente "Business"</strong><br><span class="text-sm text-gray-400">Función: Starter + Agendamiento.</span></li>
+                            <li><strong class="font-semibold text-gray-200">Nivel 3: Agente "Pro"</strong><br><span class="text-sm text-gray-400">Función: Business + Integraciones y Seguridad con **Opal**.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: ESTRATEGIA GO-TO-MARKET -->
+            <div class="glass-card rounded-xl p-6">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <svg class="w-8 h-8 text-blue-400 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-100 mb-2">3. ESTRATEGIA GO-TO-MARKET</h2>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><strong class="font-semibold text-gray-200">Modelo Principal:</strong> Product-Led Growth.</li>
+                            <li><strong class="font-semibold text-gray-200">Gancho Principal:</strong> "Agente Starter - Prueba Gratuita de 7 Días".</li>
+                            <li><strong class="font-semibold text-gray-200">Protocolo de Presentación:</strong> "La Experiencia Vex" (Avatar + Voz + Video).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 4: HOJA DE RUTA -->
+            <div class="glass-card rounded-xl p-6">
+                 <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <svg class="w-8 h-8 text-blue-400 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 16.382V5.618a1 1 0 00-1.447-.894L15 7m-6 10V7"></path></svg>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-100 mb-2">4. HOJA DE RUTA</h2>
+                        <div class="mt-4">
+                            <h3 class="font-semibold text-gray-200">VÍA TÉCNICA: "Proyecto Cero"</h3>
+                            <p class="text-sm text-gray-400 mb-2">Sprint de 4 Semanas</p>
+                            <ol class="list-decimal list-inside text-sm text-gray-300 space-y-1">
+                                <li class="font-bold highlight">
+                                    <div class="flex items-center">
+                                        <span>Inicio Semana 2: Configurar Bóveda Digital (GitHub)</span>
+                                        <span class="flex items-center ml-2 bg-blue-900/50 text-blue-300 px-2 py-0.5 rounded-full">
+                                            <span class="w-2 h-2 bg-blue-400 rounded-full mr-2 status-dot"></span>
+                                            ESTADO ACTUAL
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>Semana 2: Prototipado del Agente</li>
+                                <li>Semana 3: Refinamiento y Creación de Activos ("Vex")</li>
+                                <li>Semana 4: Construcción de Infraestructura</li>
+                            </ol>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="font-semibold text-gray-200">VÍA DE NEGOCIO: Comercial</h3>
+                            <p class="text-sm text-gray-400">Análisis de Costos, Legal, Precios y Facturación (Post-Sprint).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: RECOMENDACIONES ESTRATÉGICAS -->
+            <div class="glass-card rounded-xl p-6 lg:col-span-3">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <svg class="w-8 h-8 text-blue-400 card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-100 mb-2">5. RECOMENDACIONES ESTRATÉGICAS</h2>
+                        <ul class="space-y-2 text-gray-300 list-decimal list-inside">
+                            <li><strong class="font-semibold text-gray-200">Enfoque en el MVP:</strong> Obsesionarse con la experiencia del "Agente Starter - Prueba Gratuita".</li>
+                            <li><strong class="font-semibold text-gray-200">Validar Costos Temprano:</strong> Medir el consumo de API del prototipo para asegurar la sostenibilidad del modelo.</li>
+                            <li><strong class="font-semibold text-gray-200">Construir Conocimiento en Paralelo:</strong> Crear los recursos de valor (infografías, etc.) mientras avanza el desarrollo técnico.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
